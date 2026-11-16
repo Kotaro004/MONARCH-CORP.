@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Ejemplo interactivo de MONARCH: automatiza la recepción, clasificación y seguimiento de nuevas solicitudes comerciales."
+      data-example-meta="description"
+    />
+    <meta name="theme-color" content="#0A0A09" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Un ejemplo de automatización comercial — MONARCH"
+      data-example-meta="og:title"
+    />
+    <meta
+      property="og:description"
+      content="De una solicitud a una respuesta preparada, con los datos ordenados en el CRM y una persona al mando."
+      data-example-meta="og:description"
+    />
+    <title>Ejemplo de automatización comercial — MONARCH</title>
+    <link rel="preload" href="/assets/fonts/newsreader-latin.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/assets/fonts/hanken-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="/examples/gestion-de-solicitudes.css" />
+  </head>
+  <body class="example-page">
+    <header class="site-header">
+      <a class="wordmark" href="/#/" aria-label="MONARCH — inicio" data-example-aria="aria-label:brand.home">MONARCH<sup>®</sup></a>
+      <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" id="menuToggle" data-example-i18n="menu.open">Menú</button>
+      <nav class="site-nav" aria-label="Navegación principal" id="siteNav" data-example-aria="aria-label:nav.aria">
+        <a href="/#/sistema" data-example-i18n="nav.system">Sistema</a>
+        <a href="/#/capacidades" data-example-i18n="nav.capabilities">Capacidades</a>
+        <a href="/#/metodo" data-example-i18n="nav.method">Método</a>
+        <a href="/#/inversion" data-example-i18n="nav.pricing">Inversión</a>
+        <button class="lang-toggle" id="langToggle" type="button" aria-label="Cambiar a inglés"><span class="lang-toggle-code" aria-hidden="true">EN</span></button>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="example-hero section-shell">
+        <div class="example-hero-rule"></div>
+        <div class="example-breadcrumb">
+          <a href="/" data-example-i18n="common.home">Inicio</a>
+          <span aria-hidden="true">/</span>
+          <span data-example-i18n="common.example">Ejemplo de automatización</span>
+        </div>
+
+        <div class="example-hero-grid">
+          <div class="example-hero-copy">
+            <p class="example-eyebrow"><span>MONARCH</span><i> / </i><span data-example-i18n="hero.eyebrow">Ejemplo 01 · proceso comercial</span></p>
+            <h1 data-example-i18n="hero.title">Cada solicitud recibe el siguiente paso correcto.</h1>
+            <p class="example-hero-intro" data-example-i18n="hero.intro">Un flujo que recibe una petición, entiende qué necesita el negocio, ordena la información en el CRM y deja preparada una respuesta para revisar.</p>
+            <div class="example-hero-actions">
+              <a class="button" href="mailto:hello@monarchcorp.es?subject=Quiero%20hablar%20con%20MONARCH"><span data-example-i18n="hero.ctaContact">Inicia una conversación</span></a>
+              <a class="text-link" href="#demo" data-example-i18n="hero.ctaDemo">Ver la demo ↓</a>
+            </div>
+          </div>
+
+          <aside class="example-before-after" aria-label="Resumen del flujo" data-example-aria="aria-label:hero.summaryLabel">
+            <div class="before-after-row">
+              <span class="example-micro" data-example-i18n="hero.beforeLabel">Antes</span>
+              <p data-example-i18n="hero.before">Copiar datos, reenviar mensajes y recordar quién necesita respuesta.</p>
+            </div>
+            <div class="before-after-arrow" aria-hidden="true">↓</div>
+            <div class="before-after-row">
+              <span class="example-micro" data-example-i18n="hero.afterLabel">Con el sistema</span>
+              <p data-example-i18n="hero.after">Solicitud clasificada, CRM actualizado y respuesta lista para revisión.</p>
+            </div>
+            <div class="before-after-note">
+              <span class="status-dot" aria-hidden="true"></span>
+              <span data-example-i18n="hero.note">Ejemplo ilustrativo · adaptable a cada empresa</span>
+            </div>
+          </aside>
+        </div>
+
+        <div class="example-flow-ribbon" aria-label="Pasos del proceso" data-example-aria="aria-label:flow.aria">
+          <span data-example-i18n="flow.intake">Solicitud</span><i aria-hidden="true">→</i>
+          <span data-example-i18n="flow.context">Contexto</span><i aria-hidden="true">→</i>
+          <span data-example-i18n="flow.crm">CRM</span><i aria-hidden="true">→</i>
+          <span data-example-i18n="flow.reply">Respuesta</span><i aria-hidden="true">→</i>
+          <span data-example-i18n="flow.review">Revisión humana</span>
+        </div>
+      </section>
+
+      <section class="example-demo section-shell section-space" id="demo">
+        <div class="example-section-heading">
+          <div>
+            <p class="example-eyebrow"><span data-example-i18n="demo.eyebrow">Demo interactiva</span><i> / </i><span data-example-i18n="demo.fakeData">Datos de muestra</span></p>
+            <h2 data-example-i18n="demo.heading">Una solicitud entra. El sistema se pone en marcha.</h2>
+          </div>
+          <p data-example-i18n="demo.intro">Ejecuta el flujo paso a paso y mira cómo se organiza el trabajo antes de que una persona revise la respuesta.</p>
+        </div>
+
+        <div class="demo-workspace">
+          <article class="demo-inbox">
+            <div class="demo-card-top">
+              <span class="example-micro" data-example-i18n="demo.incoming">Nueva solicitud</span>
+              <span class="demo-source"><span aria-hidden="true">↳</span> <span data-example-i18n="demo.source">Formulario web</span></span>
+            </div>
+            <div class="demo-person">
+              <div class="demo-avatar" aria-hidden="true">EV</div>
+              <div>
+                <h3>Elena Vidal</h3>
+                <p>Estudio Bruma</p>
+              </div>
+            </div>
+            <p class="demo-email">elena@estudiobruma.example</p>
+            <blockquote data-example-i18n="demo.message">Cada semana copiamos a mano las nuevas solicitudes entre herramientas y a veces tardamos en contestar. ¿Podemos conectarlo a HubSpot?</blockquote>
+            <div class="demo-tags">
+              <span data-example-i18n="demo.tagSize">Equipo de 12 personas</span>
+              <span data-example-i18n="demo.tagTool">Usa HubSpot</span>
+            </div>
+            <button class="button demo-run" type="button" id="runDemo">
+              <span data-example-i18n="demo.run">Simular la automatización</span>
+              <span aria-hidden="true">↗</span>
+            </button>
+            <p class="demo-disclaimer" data-example-i18n="demo.disclaimer">La simulación se ejecuta en esta página. No se envían datos ni se conecta a un CRM real.</p>
+          </article>
+
+          <div class="demo-steps-wrap">
+            <ol class="demo-steps" id="demoSteps" aria-label="Pasos de la automatización" data-example-aria="aria-label:demo.stepsLabel">
+              <li class="demo-step" data-demo-step="0">
+                <span class="demo-step-number">01</span>
+                <div class="demo-step-copy">
+                  <h3 data-example-i18n="steps.capture.title">Capturar</h3>
+                  <p data-example-i18n="steps.capture.body">La solicitud llega desde el formulario web.</p>
+                </div>
+                <span class="demo-step-state" data-step-state data-example-i18n="state.waiting">Pendiente</span>
+              </li>
+              <li class="demo-step" data-demo-step="1">
+                <span class="demo-step-number">02</span>
+                <div class="demo-step-copy">
+                  <h3 data-example-i18n="steps.understand.title">Entender</h3>
+                  <p data-example-i18n="steps.understand.body">La IA detecta necesidad, herramientas y encaje.</p>
+                </div>
+                <span class="demo-step-state" data-step-state data-example-i18n="state.waiting">Pendiente</span>
+              </li>
+              <li class="demo-step" data-demo-step="2">
+                <span class="demo-step-number">03</span>
+                <div class="demo-step-copy">
+                  <h3 data-example-i18n="steps.organise.title">Ordenar</h3>
+                  <p data-example-i18n="steps.organise.body">El contacto y el contexto quedan preparados para el CRM.</p>
+                </div>
+                <span class="demo-step-state" data-step-state data-example-i18n="state.waiting">Pendiente</span>
+              </li>
+              <li class="demo-step" data-demo-step="3">
+                <span class="demo-step-number">04</span>
+                <div class="demo-step-copy">
+                  <h3 data-example-i18n="steps.prepare.title">Preparar</h3>
+                  <p data-example-i18n="steps.prepare.body">Se redacta una respuesta según lo que pidió.</p>
+                </div>
+                <span class="demo-step-state" data-step-state data-example-i18n="state.waiting">Pendiente</span>
+              </li>
+              <li class="demo-step" data-demo-step="4">
+                <span class="demo-step-number">05</span>
+                <div class="demo-step-copy">
+                  <h3 data-example-i18n="steps.review.title">Revisar</h3>
+                  <p data-example-i18n="steps.review.body">Una persona aprueba el mensaje antes de enviarlo.</p>
+                </div>
+                <span class="demo-step-state" data-step-state data-example-i18n="state.waiting">Pendiente</span>
+              </li>
+            </ol>
+          </div>
+
+          <aside class="demo-output" id="demoOutput" aria-live="polite" aria-atomic="true">
+            <div class="demo-output-top">
+              <span class="example-micro" data-example-i18n="output.title">Resumen del sistema</span>
+              <span class="output-indicator" id="outputIndicator" aria-hidden="true"></span>
+            </div>
+            <div class="demo-output-empty" id="outputEmpty">
+              <span class="output-empty-mark" aria-hidden="true">M</span>
+              <p data-example-i18n="output.empty">La salida del proceso aparecerá aquí.</p>
+            </div>
+            <div class="demo-output-result" id="outputResult" hidden>
+              <p class="output-state" id="outputState"></p>
+              <h3 data-example-i18n="output.leadCreated">Lead listo para el CRM</h3>
+              <div class="output-fields">
+                <div><span data-example-i18n="output.company">Empresa</span><strong>Estudio Bruma</strong></div>
+                <div><span data-example-i18n="output.fit">Encaje estimado</span><strong class="fit-value" data-example-i18n="output.fitValue">Alto</strong></div>
+                <div><span data-example-i18n="output.next">Siguiente paso</span><strong data-example-i18n="output.nextValue">Revisión comercial</strong></div>
+              </div>
+              <div class="output-message">
+                <span class="example-micro" data-example-i18n="output.draft">Borrador de respuesta</span>
+                <p data-example-i18n="output.reply">Hola Elena, gracias por explicarnos cómo gestionáis las solicitudes. Podemos revisar juntos una conexión con HubSpot y diseñar un flujo que deje cada nuevo contacto organizado y listo para responder.</p>
+              </div>
+              <button class="output-approve" type="button" id="approveDemo" disabled>
+                <span data-example-i18n="output.approve">Aprobar respuesta (simulación)</span>
+                <span aria-hidden="true">↗</span>
+              </button>
+              <p class="output-footnote" data-example-i18n="output.footnote">Una persona conserva la decisión final. No se envía ningún mensaje desde esta demo.</p>
+            </div>
+          </aside>
+        </div>
+        <p class="demo-live-status" id="demoLiveStatus" role="status" aria-live="polite"></p>
+      </section>
+
+      <section class="example-logic section-shell section-space">
+        <div class="example-logic-heading">
+          <p class="example-eyebrow" data-example-i18n="logic.eyebrow">Qué hace el sistema</p>
+          <h2 data-example-i18n="logic.heading">Automatiza el trabajo repetitivo. Conserva el criterio donde importa.</h2>
+        </div>
+        <div class="logic-grid">
+          <article class="logic-card">
+            <span class="logic-number" data-example-i18n="logic.one.label">01 / Entrada</span>
+            <h3 data-example-i18n="logic.one.title">Nada se pierde por el camino.</h3>
+            <p data-example-i18n="logic.one.body">Cada solicitud crea una ficha con sus datos y la conversación original, lista para seguir su recorrido.</p>
+          </article>
+          <article class="logic-card">
+            <span class="logic-number" data-example-i18n="logic.two.label">02 / Contexto</span>
+            <h3 data-example-i18n="logic.two.title">El equipo recibe una petición entendible.</h3>
+            <p data-example-i18n="logic.two.body">La IA resume lo que necesita la persona, las herramientas que menciona y cualquier señal que requiera atención.</p>
+          </article>
+          <article class="logic-card">
+            <span class="logic-number" data-example-i18n="logic.three.label">03 / Acción</span>
+            <h3 data-example-i18n="logic.three.title">El siguiente paso queda preparado.</h3>
+            <p data-example-i18n="logic.three.body">El CRM conserva el contexto y se prepara una respuesta coherente con la solicitud, sin copiar y pegar.</p>
+          </article>
+          <article class="logic-card logic-card-human">
+            <span class="logic-number" data-example-i18n="logic.four.label">04 / Control</span>
+            <h3 data-example-i18n="logic.four.title">Una persona mantiene la última palabra.</h3>
+            <p data-example-i18n="logic.four.body">Un responsable revisa el mensaje y decide si lo aprueba, lo edita o lo deriva a otra persona.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="example-contact section-shell">
+        <div class="example-contact-top">
+          <span data-example-i18n="contact.eyebrow">Tu negocio / tu proceso</span>
+          <span>MONARCH CORP.</span>
+        </div>
+        <div class="example-contact-content">
+          <p class="example-contact-kicker" data-example-i18n="contact.kicker">Un ejemplo. Muchas formas de adaptarlo.</p>
+          <h2 data-example-i18n="contact.heading">Hagamos que tu proceso avance solo.</h2>
+          <a class="button" href="mailto:hello@monarchcorp.es?subject=Quiero%20hablar%20con%20MONARCH">
+            <span data-example-i18n="contact.cta">Inicia una conversación</span>
+          </a>
+          <p class="example-contact-note" data-example-i18n="contact.note">Empezamos por el trabajo repetitivo que más tiempo te devuelve.</p>
+        </div>
+        <footer>
+          <span>© <span data-year></span> MONARCH CORP.</span>
+          <a href="mailto:hello@monarchcorp.es">hello@monarchcorp.es</a>
+          <a href="/#/" data-example-i18n="footer.home">Volver a MONARCH</a>
+        </footer>
+      </section>
+    </main>
+    <script src="/examples/gestion-de-solicitudes.js"></script>
+  </body>
+</html>

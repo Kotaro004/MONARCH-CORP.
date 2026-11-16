@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="description" content="MONARCH diseña agentes de IA y sistemas de automatización para pymes españolas. Planes claros desde 300€/mes." data-i18n-attr="content:meta.description" />
+    <meta name="theme-color" content="#0A0A09" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <meta property="og:title" content="MONARCH — Sistemas que hacen que tu negocio avance solo." data-i18n-attr="content:meta.ogTitle" />
+    <meta property="og:description" content="Diseñamos e implantamos agentes de IA y automatización para negocios con ambición. Desde 300€/mes." data-i18n-attr="content:meta.ogDescription" />
+    <meta property="og:type" content="website" />
+    <title data-i18n="meta.title">MONARCH — Sistemas que hacen que tu negocio avance solo.</title>
+    <link rel="preload" href="/assets/fonts/newsreader-latin.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/assets/fonts/hanken-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="wordmark" href="#/" aria-label="MONARCH — inicio" data-i18n-attr="aria-label:brand.home">MONARCH<sup>®</sup></a>
+      <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="siteNav" id="menuToggle" data-i18n="menu.open">Menú</button>
+      <nav class="site-nav" aria-label="Navegación principal" id="siteNav" data-i18n-attr="aria-label:nav.aria">
+        <a href="#/sistema" data-route-link="sistema" data-i18n="nav.system">Sistema</a>
+        <a href="#/capacidades" data-route-link="capacidades" data-i18n="nav.capabilities">Capacidades</a>
+        <a href="#/metodo" data-route-link="metodo" data-i18n="nav.method">Método</a>
+        <a href="#/inversion" data-route-link="inversion" data-i18n="nav.pricing">Inversión</a>
+        <a href="#/agenda" data-route-link="agenda" data-i18n="nav.agenda">Agenda</a>
+        <button class="lang-toggle" id="langToggle" type="button" aria-label="Switch to English"><span class="lang-toggle-code" aria-hidden="true">EN</span></button>
+      </nav>
+    </header>
+
+    <main id="top">
+      <aside class="project-notice" role="note">
+        <p><strong data-i18n="projectNotice.label">Proyecto en desarrollo.</strong> <span data-i18n="projectNotice.body">MONARCH aún no opera comercialmente, no presta servicios ni acepta contrataciones. La información sobre servicios y precios es orientativa.</span></p>
+      </aside>
+
+      <div class="home-view" data-view="home">
+        <section class="hero-scroll" id="heroScroll" aria-label="MONARCH">
+          <div class="hero-stage">
+            <canvas class="hero-canvas" id="heroCanvas" aria-hidden="true"></canvas>
+            <div class="hero-vignette" aria-hidden="true"></div>
+            <div class="hero-copy" id="heroCopy">
+              <p class="eyebrow" data-i18n="hero.kicker">MONARCH CORP. / SISTEMAS PARA PYMES</p>
+              <h1 class="hero-title" data-i18n="hero.title">Sistemas que hacen que tu negocio avance solo.</h1>
+              <p class="hero-sub" data-i18n="hero.sub">Agentes de IA y automatizaciones a medida para pymes españolas. Menos tareas repetitivas, más tiempo para lo que mueve el negocio.</p>
+              <a class="button" data-contact-link href="mailto:hello@monarchcorp.es?subject=Quiero%20hablar%20con%20MONARCH" data-i18n="hero.cta">Inicia una conversación</a>
+            </div>
+            <div class="hero-step-captions" id="heroCaptions" aria-hidden="true">
+              <p class="hero-step"><strong data-i18n="hero.step1.title">Solicitud</strong><span data-i18n="hero.step1.body">Una petición llega al sistema.</span></p>
+              <p class="hero-step"><strong data-i18n="hero.step2.title">Clasificación</strong><span data-i18n="hero.step2.body">El sistema entiende de qué se trata y a quién corresponde.</span></p>
+              <p class="hero-step"><strong data-i18n="hero.step3.title">CRM</strong><span data-i18n="hero.step3.body">El contexto queda ordenado, sin copiar datos a mano.</span></p>
+              <p class="hero-step"><strong data-i18n="hero.step4.title">Revisión humana</strong><span data-i18n="hero.step4.body">Una persona valida el resultado y decide.</span></p>
+              <p class="hero-step"><strong data-i18n="hero.step5.title">Resultado</strong><span data-i18n="hero.step5.body">El siguiente paso queda preparado para el equipo.</span></p>
+            </div>
+            <div class="hero-facts" aria-label="MONARCH en breve" data-i18n-attr="aria-label:hero.factsLabel">
+              <a href="#/inversion"><strong data-i18n="hero.fact1.title">Desde 300 €/mes</strong><span data-i18n="hero.fact1.body">Tres niveles de inversión, sin permanencia.</span></a>
+              <a href="#/capacidades"><strong data-i18n="hero.fact2.title">Agentes de IA</strong><span data-i18n="hero.fact2.body">Entienden el contexto y actúan en cada flujo.</span></a>
+              <a href="#/capacidades"><strong data-i18n="hero.fact3.title">Automatización conectada</strong><span data-i18n="hero.fact3.body">Traspasos fluidos entre personas y herramientas.</span></a>
+              <a href="#/sistema"><strong data-i18n="hero.fact4.title">Sistemas operativos</strong><span data-i18n="hero.fact4.body">Infraestructura clara y medible que se afina con el uso.</span></a>
+            </div>
+            <div class="hero-progress" id="heroProgress" aria-hidden="true"></div>
+          </div>
+        </section>
+
+        <section class="manifesto-scroll" id="manifestoScroll" aria-labelledby="manifestoTitle">
+          <div class="manifesto-stage">
+            <div class="manifesto-line" id="manifestoLine" aria-hidden="true"></div>
+            <div class="manifesto-copy">
+              <h2 id="manifestoTitle" class="manifesto-title">
+                <span data-i18n="manifesto.line1" data-motion-words>Tu equipo debería dedicar su tiempo a las decisiones que importan.</span>
+                <span class="manifesto-second" data-i18n="manifesto.line2" data-motion-words>Todo lo demás puede moverse solo.</span>
+              </h2>
+              <p class="manifesto-body" data-i18n="manifesto.body">Convertimos procesos sueltos, conocimiento disperso y datos infrautilizados en sistemas fiables que trabajan en segundo plano: con precisión, de forma constante y a cualquier escala.</p>
+            </div>
+          </div>
+        </section>
+
+        <nav class="index-list" aria-label="Explora MONARCH" data-i18n-attr="aria-label:index.aria">
+          <a class="index-row" href="#/sistema"><span class="index-number">01</span><strong data-i18n="nav.system">Sistema</strong><span data-i18n="index.system">Cómo una petición se convierte en una respuesta bien preparada.</span></a>
+          <a class="index-row" href="#/capacidades"><span class="index-number">02</span><strong data-i18n="nav.capabilities">Capacidades</strong><span data-i18n="index.capabilities">Agentes de IA, automatización conectada y sistemas operativos.</span></a>
+          <a class="index-row" href="#/metodo"><span class="index-number">03</span><strong data-i18n="nav.method">Método</strong><span data-i18n="index.method">Descubrir, diseñar, implantar y optimizar.</span></a>
+          <a class="index-row" href="#/inversion"><span class="index-number">04</span><strong data-i18n="nav.pricing">Inversión</strong><span data-i18n="index.pricing">Planes desde 300 €/mes, sin permanencia.</span></a>
+        </nav>
+
+        <section class="home-close">
+          <h2 data-i18n="contact.line">El siguiente paso no es un equipo más grande.</h2>
+          <p class="home-close-emphasis" data-i18n="contact.heading">Es un sistema mejor.</p>
+          <div class="close-actions">
+            <a class="button" data-contact-link href="mailto:hello@monarchcorp.es?subject=Quiero%20hablar%20con%20MONARCH" data-i18n="contact.cta">Inicia una conversación</a>
+            <a class="text-link" href="#/agenda" data-i18n="agenda.cta">Agenda una reunión</a>
+            <p data-i18n="contact.note">Para negocios con ambición que quieren operar de otra manera.</p>
+          </div>
+          <footer class="site-footer"><span>© <span data-year></span> MONARCH CORP.</span><a href="mailto:hello@monarchcorp.es">hello@monarchcorp.es</a></footer>
+        </section>
+      </div>
+
+      <section class="route-page" data-page="sistema" hidden>
+        <div class="route-heading">
+          <p class="eyebrow" data-i18n="system.kicker">MONARCH / SISTEMA</p>
+          <h1 data-i18n="system.title">Un sistema convierte una petición en una respuesta bien preparada.</h1>
+          <p class="route-lede" data-i18n="system.lede">Convertimos procesos sueltos, conocimiento disperso y datos infrautilizados en sistemas fiables que trabajan en segundo plano: con precisión, de forma constante y a cualquier escala.</p>
+        </div>
+        <section class="route-section" aria-labelledby="systemProcessTitle">
+          <h2 id="systemProcessTitle" data-i18n="system.processHeading">Un proceso, de principio a fin</h2>
+          <ol class="process-rows">
+            <li><span>01</span><h3 data-i18n="hero.step1.title">Solicitud</h3><p data-i18n="hero.step1.body">Una petición llega al sistema.</p></li>
+            <li><span>02</span><h3 data-i18n="hero.step2.title">Clasificación</h3><p data-i18n="system.step2.body">El sistema entiende de qué se trata y a quién corresponde.</p></li>
+            <li><span>03</span><h3 data-i18n="system.step3.title">CRM</h3><p data-i18n="system.step3.body">El contexto queda ordenado en el CRM, sin copiar datos a mano.</p></li>
+            <li><span>04</span><h3 data-i18n="hero.step4.title">Revisión humana</h3><p data-i18n="system.step4.body">Una persona valida el resultado y decide. El criterio humano se queda donde más valor aporta.</p></li>
+            <li><span>05</span><h3 data-i18n="hero.step5.title">Resultado</h3><p data-i18n="system.step5.body">Tu equipo recibe el siguiente paso listo para decidir.</p></li>
+          </ol>
+          <a class="text-link" href="/examples/gestion-de-solicitudes.html" data-i18n="system.exampleLink">Explora el ejemplo interactivo ↗</a>
+        </section>
+        <section class="calculator-section route-section" aria-labelledby="calcHeading">
+          <div class="calculator-intro"><p class="eyebrow" data-i18n="calc.kicker">ESTIMACIÓN ORIENTATIVA</p><h2 id="calcHeading" data-i18n="calc.heading">Calcula tu ahorro estimado</h2><p data-i18n="calc.disclaimer">Estimación orientativa, calculada sobre una reducción media del 40% del tiempo dedicado a tareas repetitivas. El resultado real depende de tus procesos.</p></div>
+          <div class="calculator" id="calculator">
+            <div class="calc-field"><label for="calcHours" data-i18n="calc.hoursLabel">Horas semanales en tareas manuales</label><input type="number" id="calcHours" inputmode="numeric" min="0" max="200" value="10" /></div>
+            <div class="calc-field"><label for="calcCost" data-i18n="calc.costLabel">Coste medio por hora (€)</label><input type="number" id="calcCost" inputmode="decimal" min="0" max="500" value="20" /></div>
+            <div class="calc-result" aria-live="polite"><div><span data-i18n="calc.resultMonthlyLabel">Ahorro estimado al mes</span><strong id="calcMonthly">173 €</strong></div><div><span data-i18n="calc.resultAnnualLabel">Ahorro estimado al año</span><strong id="calcAnnual">2.079 €</strong></div></div>
+          </div>
+        </section>
+        <div class="route-end"><h2 data-i18n="system.end">Tu equipo, en las decisiones que importan.</h2><a class="button" data-contact-link href="mailto:hello@monarchcorp.es?subject=Quiero%20hablar%20con%20MONARCH" data-i18n="contact.cta">Inicia una conversación</a></div>
+      </section>
+
+      <section class="route-page" data-page="capacidades" hidden>
+        <div class="route-heading"><p class="eyebrow" data-i18n="capabilities.kicker">MONARCH / CAPACIDADES</p><h1 data-i18n="capabilities.title">Tres formas de que tu negocio avance solo.</h1><p class="route-lede" data-i18n="hero.sub">Agentes de IA y automatizaciones a medida para pymes españolas. Menos tareas repetitivas, más tiempo para lo que mueve el negocio.</p></div>
+        <section class="route-section"><h2 data-i18n="capabilities.heading">Qué construimos</h2>
+          <div class="capability-rows">
+            <article><span>01</span><h3 data-i18n="capability1.title">Agentes de IA</h3><p data-i18n="capability1.body">Inteligencia especializada que entiende el contexto de tu negocio, actúa por sí sola y extiende el criterio de tu equipo a cada flujo de trabajo.</p></article>
+            <article><span>02</span><h3 data-i18n="capability2.title">Automatización conectada</h3><p data-i18n="capability2.body">Traspasos fluidos entre personas, herramientas y decisiones, para que tu negocio siga en marcha sin fricción entre pasos.</p></article>
+            <article><span>03</span><h3 data-i18n="capability3.title">Sistemas operativos</h3><p data-i18n="capability3.body">Una infraestructura clara y medible, que se vuelve más precisa cada vez que se pone en marcha.</p></article>
+          </div>
+        </section>
+        <section class="route-section"><h2 data-i18n="capabilities.outcomesHeading">Lo que cambia en tu negocio</h2><div class="outcome-rows">
+          <article><h3 data-i18n="proof.point1.label">Claridad</h3><p data-i18n="proof.point1.body">Una sola vista de lo que importa y de lo que toca hacer después.</p></article>
+          <article><h3 data-i18n="proof.point2.label">Capacidad</h3><p data-i18n="proof.point2.body">Más resultados sin sumar estructura ni personal.</p></article>
+          <article><h3 data-i18n="proof.point3.label">Control</h3><p data-i18n="proof.point3.body">El criterio humano se queda justo donde más valor aporta.</p></article>
+        </div></section>
+        <div class="route-end"><h2 data-i18n="capabilities.end">Cuéntanos qué te quita tiempo.</h2><a class="button" data-contact-link href="mailto:hello@monarchcorp.es?subject=Quiero%20hablar%20con%20MONARCH" data-i18n="contact.cta">Inicia una conversación</a></div>
+      </section>
+
+      <section class="route-page" data-page="metodo" hidden>
+        <div class="route-heading"><p class="eyebrow" data-i18n="method.kicker">MONARCH / MÉTODO</p><h1 data-i18n="method.title">Cuatro pasos, de entender tu trabajo a mejorarlo con el tiempo.</h1><p class="route-lede" data-i18n="method.lede">No partimos de una plantilla: partimos de cómo opera tu negocio.</p></div>
+        <section class="route-section"><h2 data-i18n="approach.heading">Cómo trabajamos</h2><ol class="process-rows method-rows">
+          <li><span>01</span><h3 data-i18n="approach.step1.title">Descubrir</h3><p data-i18n="approach.step1.body">Mapeamos el trabajo, la fricción y la oportunidad que de verdad merece la pena resolver.</p></li>
+          <li><span>02</span><h3 data-i18n="approach.step2.title">Diseñar</h3><p data-i18n="approach.step2.body">Diseñamos un sistema adaptado a tu forma de operar, no una plantilla genérica.</p></li>
+          <li><span>03</span><h3 data-i18n="approach.step3.title">Implantar</h3><p data-i18n="approach.step3.body">Integramos, probamos y ajustamos hasta que forma parte de cómo funciona tu negocio.</p></li>
+          <li><span>04</span><h3 data-i18n="approach.step4.title">Optimizar</h3><p data-i18n="approach.step4.body">Seguimos de cerca el rendimiento para que el sistema sea cada vez más útil.</p></li>
+        </ol></section>
+        <blockquote class="method-quote" data-i18n="proof.quote">Los mejores sistemas no se sienten como tecnología: se sienten como un negocio que por fin funciona como debería.</blockquote>
+        <div class="route-end"><h2 data-i18n="method.end">El primer paso es una conversación.</h2><a class="button" data-contact-link href="mailto:hello@monarchcorp.es?subject=Quiero%20hablar%20con%20MONARCH" data-i18n="contact.cta">Inicia una conversación</a></div>
+      </section>
+
+      <section class="route-page" data-page="inversion" hidden>
+        <div class="route-heading"><p class="eyebrow" data-i18n="pricing.kicker">MONARCH / INVERSIÓN</p><h1 data-i18n="pricing.title">Precios claros desde el primer día.</h1><p class="route-lede" data-i18n="pricing.intro">Elige el punto de partida que tenga sentido para el tamaño de tu negocio ahora mismo.</p></div>
+        <section class="route-section"><div class="pricing-grid">
+          <article class="pricing-card"><h2 data-i18n="pricing.tier1.name">Arranque</h2><p class="pricing-price"><span data-i18n="pricing.from">Desde</span> <strong>300 €</strong> <span data-i18n="pricing.perMonth">/ mes</span></p><p data-i18n="pricing.tier1.audience">Para equipos pequeños que quieren automatizar sus primeras tareas repetitivas.</p><ul><li data-i18n="pricing.tier1.f1">1 automatización o agente en producción</li><li data-i18n="pricing.tier1.f2">Integración con las herramientas que ya usas</li><li data-i18n="pricing.tier1.f3">Revisión mensual de rendimiento</li><li data-i18n="pricing.tier1.f4">Soporte por email</li></ul></article>
+          <article class="pricing-card"><h2 data-i18n="pricing.tier2.name">Crecimiento</h2><p class="pricing-price"><span data-i18n="pricing.from">Desde</span> <strong>800 €</strong> <span data-i18n="pricing.perMonth">/ mes</span></p><p data-i18n="pricing.tier2.audience">Para negocios con varios procesos que quieren conectarlos y escalar.</p><ul><li data-i18n="pricing.tier2.f1">Hasta 3 automatizaciones o agentes conectados entre sí</li><li data-i18n="pricing.tier2.f2">Panel de seguimiento con métricas clave</li><li data-i18n="pricing.tier2.f3">Ajustes y mejoras continuas</li><li data-i18n="pricing.tier2.f4">Soporte prioritario</li></ul></article>
+          <article class="pricing-card"><h2 data-i18n="pricing.tier3.name">A medida</h2><p class="pricing-price"><span data-i18n="pricing.from">Desde</span> <strong>1.500 €</strong> <span data-i18n="pricing.perMonth">/ mes</span></p><p data-i18n="pricing.tier3.audience">Para operaciones más complejas que necesitan un sistema completo.</p><ul><li data-i18n="pricing.tier3.f1">Sistema operativo de IA completo y a medida</li><li data-i18n="pricing.tier3.f2">Varios agentes trabajando en conjunto</li><li data-i18n="pricing.tier3.f3">Acompañamiento dedicado y sesiones estratégicas</li><li data-i18n="pricing.tier3.f4">Prioridad total en desarrollo y soporte</li></ul></article>
+        </div><p class="pricing-footnote" data-i18n="pricing.footnote">El precio final depende de la complejidad de tus procesos y del número de herramientas a conectar. Lo concretamos juntos antes de empezar.</p></section>
+        <section class="quiz-section route-section" id="encuentra-tu-plan"><h2 data-i18n="quiz.heading">Encuentra tu plan</h2><p class="quiz-intro" data-i18n="quiz.intro">Responde tres preguntas rápidas y te diremos qué nivel de MONARCH encaja mejor contigo, antes de reservar la llamada.</p>
+          <div class="quiz-box" id="quizBox"><p class="quiz-progress" id="quizProgress">Pregunta 1 de 3</p>
+            <div class="quiz-step is-active" data-step="1"><fieldset><legend data-i18n="quiz.q1.question">¿Cuántas personas forman tu equipo?</legend><div class="quiz-options"><button type="button" class="quiz-option" data-score="0" data-i18n="quiz.q1.o1">1–5</button><button type="button" class="quiz-option" data-score="1" data-i18n="quiz.q1.o2">6–20</button><button type="button" class="quiz-option" data-score="2" data-i18n="quiz.q1.o3">21–50</button><button type="button" class="quiz-option" data-score="3" data-i18n="quiz.q1.o4">Más de 50</button></div></fieldset></div>
+            <div class="quiz-step" data-step="2"><fieldset><legend data-i18n="quiz.q2.question">¿Cuántos procesos quieres automatizar para empezar?</legend><div class="quiz-options"><button type="button" class="quiz-option" data-score="0" data-i18n="quiz.q2.o1">1</button><button type="button" class="quiz-option" data-score="1" data-i18n="quiz.q2.o2">2–3</button><button type="button" class="quiz-option" data-score="2" data-i18n="quiz.q2.o3">4 o más</button></div></fieldset><button type="button" class="quiz-back" data-back="1" data-i18n="quiz.back">Atrás</button></div>
+            <div class="quiz-step" data-step="3"><fieldset><legend data-i18n="quiz.q3.question">¿Qué presupuesto mensual manejas para esto?</legend><div class="quiz-options"><button type="button" class="quiz-option" data-score="0" data-i18n="quiz.q3.o1">Menos de 500 €</button><button type="button" class="quiz-option" data-score="1" data-i18n="quiz.q3.o2">Entre 500 € y 1.500 €</button><button type="button" class="quiz-option" data-score="2" data-i18n="quiz.q3.o3">Más de 1.500 €</button></div></fieldset><button type="button" class="quiz-back" data-back="2" data-i18n="quiz.back">Atrás</button></div>
+            <div class="quiz-step quiz-result" data-step="result"><p class="quiz-result-kicker" data-i18n="quiz.resultKicker">Tu punto de partida recomendado</p><h3 id="quizResultTier">Crecimiento</h3><p id="quizResultBody"></p><a class="button" id="quizResultCta" href="mailto:hello@monarchcorp.es?subject=Quiero%20hablar%20con%20MONARCH">Inicia una conversación</a><button type="button" class="quiz-restart" id="quizRestart" data-i18n="quiz.restart">Volver a empezar</button></div>
+          </div>
+        </section>
+        <div class="route-end"><h2 data-i18n="pricing.end">Antes de decidir, hablemos.</h2><a class="button" data-contact-link href="mailto:hello@monarchcorp.es?subject=Quiero%20hablar%20con%20MONARCH" data-i18n="contact.cta">Inicia una conversación</a></div>
+      </section>
+
+      <section class="route-page agenda-page" data-page="agenda" hidden>
+        <div class="route-heading">
+          <p class="eyebrow" data-i18n="agenda.kicker">MONARCH / Agenda</p>
+          <h1 id="agendaTitle" data-i18n="agenda.title">Reserva una reunión con MONARCH.</h1>
+          <p class="route-lede" data-i18n="agenda.lede">Escríbenos y coordinaremos una primera conversación.</p>
+        </div>
+        <section class="route-section agenda-section" aria-labelledby="agendaTitle">
+          <div class="agenda-widget-shell">
+            <p class="route-lede">Contacta con MONARCH por correo electrónico para consultar disponibilidad y coordinar una primera conversación.</p>
+            <a class="button" data-contact-link href="mailto:hello@monarchcorp.es?subject=Quiero%20hablar%20con%20MONARCH">Contactar con MONARCH</a>
+          </div>
+        </section>
+      </section>
+    </main>
+    <script src="/site.config.js"></script>
+    <script src="/script.js"></script>
+    <script src="/site-motion.js"></script>
+  </body>
+</html>
